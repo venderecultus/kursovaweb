@@ -1,0 +1,1613 @@
+{
+ "url": "C:\\projects\\magazinodegy\\skydos\\index.html",
+ "at": "2026-10-29T11:10:11.906Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 7,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1053,
+     "screens": 1.2,
+     "words": 73,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "11049.png",
+      "11050.png",
+      "11049.png",
+      "11049.png",
+      "11050.png",
+      "11050.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 18,
+     "vw": 4.6,
+     "font": "Inter",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 383,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "lines": 1,
+     "size": 18,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "+",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Lucida Console",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.36,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 155,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "−",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Lucida Console",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.36,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 185,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Lucida Console",
+       "share": 0.01,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      11,
+      12,
+      13,
+      14,
+      18,
+      20,
+      22
+     ],
+     "sizeCount": 8,
+     "notLoaded": [
+      "Lucida Console"
+     ],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 22,
+      "vw": 5.6,
+      "font": "Lucida Console",
+      "text": "+"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Lucida Console"
+     ],
+     "monoSamples": [
+      "+",
+      "−"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.17,
+     "smallText": 9
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#090a0b",
+     "bodyBgHsl": {
+      "h": 210,
+      "s": 0.1,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#151619",
+       "top": 0,
+       "hsl": {
+        "h": 225,
+        "s": 0.09,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b3b4b1",
+       "share": 0.14
+      },
+      {
+       "color": "#f5f5f2",
+       "share": 0.13
+      },
+      {
+       "color": "#b5b6b3",
+       "share": 0.11
+      },
+      {
+       "color": "#171912",
+       "share": 0.11
+      },
+      {
+       "color": "#bfc0bd",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#c9ff22",
+      "hsl": {
+       "h": 75,
+       "s": 1,
+       "l": 0.57
+      },
+      "fg": "#181a12"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 20,
+     "height": 44,
+     "withShadow": 4,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Супермаркети",
+      "За відстанню ⌄",
+      "Хапнути ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 18,
+     "shadowOverlay": 2,
+     "shadowSamples": [
+      "nav.switcher → rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.467) 0px -2px 4p",
+      "button.switch-tab.active → rgba(255, 255, 255, 0.6) 0px 1px 0px 0px inset, rgba(98, 125, 25, 0.44) 0px -2px",
+      "section.map-shell → rgba(255, 255, 255, 0.07) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 10px 22p",
+      "span.offer-marker → rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(98, 125, 25, 0.5) 0px -2px "
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "nav.bottom-nav 390px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 2,
+     "boxRadius": 16,
+     "squareMedia": 6,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.2
+     },
+     {
+      "type": "img",
+      "ratio": 0.15
+     },
+     {
+      "type": "bg-image",
+      "ratio": 0.14
+     },
+     {
+      "type": "bg-image",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 39,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1053,
+    "margins": {
+     "left": 20,
+     "right": 11
+    },
+    "sections": [
+     {
+      "sel": "section.map-shell",
+      "tag": "section",
+      "top": 144,
+      "height": 220,
+      "words": 10,
+      "media": 0,
+      "middle": 68,
+      "heading": null,
+      "left": 39,
+      "right": 11,
+      "textLeft": 39,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#offers.offers",
+      "tag": "section",
+      "top": 383,
+      "height": 568,
+      "words": 45,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Знижки поруч",
+       "size": 18,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Знижки поруч",
+      "size": 18,
+      "top": 383,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 2
+     },
+     {
+      "x": 20,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 3,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#090a0b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 20,
+     "right": -155
+    },
+    "hero": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 18,
+     "vw": 4.6,
+     "font": "Inter",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 383,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 4,
+     "radii": [
+      [
+       16,
+       2
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 2,
+     "borderSamples": [
+      "#ffffff on #1d1e21 (16.67:1)",
+      "#ffffff on #1d1e21 (16.67:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 2,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 75,
+       "size": 49,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 6,
+     "tabularShare": 0,
+     "kpiMax": 11
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.85,
+     "tiny": 2,
+     "tinySamples": [
+      "Leaflet 9px",
+      "OpenStreetMap contributo 9px"
+     ],
+     "sizes": [
+      9,
+      11,
+      12,
+      14,
+      18,
+      20
+     ]
+    },
+    "title": {
+     "text": "Знижки поруч",
+     "size": 18,
+     "top": 383
+    },
+    "colourShare": 0.128
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 430,
+   "height": 269,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 7,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 430,
+     "h": 269
+    },
+    "page": {
+     "height": 1053,
+     "screens": 3.9,
+     "words": 73,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "11049.png",
+      "11050.png",
+      "11049.png",
+      "11049.png",
+      "11050.png",
+      "11050.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Київ",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 11,
+     "vw": 2.6,
+     "font": "Inter",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.2,
+     "top": 59,
+     "tag": "button",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "lines": 1,
+     "size": 18,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "+",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.1,
+      "font": "Lucida Console",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.36,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 155,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "−",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.1,
+      "font": "Lucida Console",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.36,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 185,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Lucida Console",
+       "share": 0.01,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      11,
+      12,
+      13,
+      14,
+      18,
+      20,
+      22
+     ],
+     "sizeCount": 8,
+     "notLoaded": [
+      "Lucida Console"
+     ],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 22,
+      "vw": 5.1,
+      "font": "Lucida Console",
+      "text": "+"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Lucida Console"
+     ],
+     "monoSamples": [
+      "+",
+      "−"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.17,
+     "smallText": 9
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#090a0b",
+     "bodyBgHsl": {
+      "h": 210,
+      "s": 0.1,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#151619",
+       "top": 0,
+       "hsl": {
+        "h": 225,
+        "s": 0.09,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#25282a",
+       "top": 144,
+       "hsl": {
+        "h": 204,
+        "s": 0.06,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#d4d2c8",
+       "top": 144,
+       "hsl": {
+        "h": 50,
+        "s": 0.12,
+        "l": 0.81
+       }
+      },
+      {
+       "color": "#1d1e21",
+       "top": 436,
+       "hsl": {
+        "h": 225,
+        "s": 0.06,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#79563b",
+       "top": 437,
+       "hsl": {
+        "h": 26,
+        "s": 0.34,
+        "l": 0.35
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b3b4b1",
+       "share": 0.14
+      },
+      {
+       "color": "#f5f5f2",
+       "share": 0.13
+      },
+      {
+       "color": "#b5b6b3",
+       "share": 0.11
+      },
+      {
+       "color": "#171912",
+       "share": 0.11
+      },
+      {
+       "color": "#bfc0bd",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#c9ff22",
+      "hsl": {
+       "h": 75,
+       "s": 1,
+       "l": 0.57
+      },
+      "fg": "#181a12"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 1,
+     "radius": 20,
+     "height": 44,
+     "withShadow": 4,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Супермаркети"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 18,
+     "shadowOverlay": 2,
+     "shadowSamples": [
+      "nav.switcher → rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.467) 0px -2px 4p",
+      "button.switch-tab.active → rgba(255, 255, 255, 0.6) 0px 1px 0px 0px inset, rgba(98, 125, 25, 0.44) 0px -2px",
+      "section.map-shell → rgba(255, 255, 255, 0.07) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 10px 22p",
+      "span.offer-marker → rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(98, 125, 25, 0.5) 0px -2px "
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "nav.bottom-nav 430px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 2,
+     "boxRadius": 16,
+     "squareMedia": 6,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.44
+     },
+     {
+      "type": "img",
+      "ratio": 0.21
+     },
+     {
+      "type": "img",
+      "ratio": 0.15
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 39,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 430,
+     "h": 269
+    },
+    "pageH": 1053,
+    "margins": {
+     "left": 20,
+     "right": 11
+    },
+    "sections": [
+     {
+      "sel": "section.map-shell",
+      "tag": "section",
+      "top": 144,
+      "height": 220,
+      "words": 10,
+      "media": 0,
+      "middle": 108,
+      "heading": null,
+      "left": 39,
+      "right": 11,
+      "textLeft": 39,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#offers.offers",
+      "tag": "section",
+      "top": 383,
+      "height": 568,
+      "words": 45,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Знижки поруч",
+       "size": 18,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Знижки поруч",
+      "size": 18,
+      "top": 383,
+      "firstScreen": false
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 2
+     },
+     {
+      "x": 20,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 3,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 430,
+     "h": 269
+    },
+    "dark": true,
+    "ground": "#090a0b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 20,
+     "right": -135
+    },
+    "hero": {
+     "text": "Київ",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 11,
+     "vw": 2.6,
+     "font": "Inter",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.2,
+     "top": 59,
+     "tag": "button",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 0,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 4,
+     "radii": [
+      [
+       16,
+       2
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 2,
+     "borderSamples": [
+      "#ffffff on #1d1e21 (16.67:1)",
+      "#ffffff on #1d1e21 (16.67:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 2,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 75,
+       "size": 49,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 6,
+     "tabularShare": 0,
+     "kpiMax": 11
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.85,
+     "tiny": 2,
+     "tinySamples": [
+      "Leaflet 9px",
+      "OpenStreetMap contributo 9px"
+     ],
+     "sizes": [
+      9,
+      11,
+      12,
+      14,
+      18,
+      20
+     ]
+    },
+    "title": {
+     "text": "Знижки поруч",
+     "size": 18,
+     "top": 383
+    },
+    "colourShare": 0.113
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 375,
+   "height": 812,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 7,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 375,
+     "h": 812
+    },
+    "page": {
+     "height": 1067,
+     "screens": 1.3,
+     "words": 73,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "11049.png",
+      "11050.png",
+      "11049.png",
+      "11049.png",
+      "11050.png",
+      "11050.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 18,
+     "vw": 4.8,
+     "font": "Inter",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 383,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "lines": 1,
+     "size": 18,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "+",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.9,
+      "font": "Lucida Console",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.36,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 155,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "−",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.9,
+      "font": "Lucida Console",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.36,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 185,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Lucida Console",
+       "share": 0.01,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      11,
+      12,
+      13,
+      14,
+      18,
+      20,
+      22
+     ],
+     "sizeCount": 8,
+     "notLoaded": [
+      "Lucida Console"
+     ],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 22,
+      "vw": 5.9,
+      "font": "Lucida Console",
+      "text": "+"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0.01,
+     "monoFamilies": [
+      "Lucida Console"
+     ],
+     "monoSamples": [
+      "+",
+      "−"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.17,
+     "smallText": 9
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#090a0b",
+     "bodyBgHsl": {
+      "h": 210,
+      "s": 0.1,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#151619",
+       "top": 0,
+       "hsl": {
+        "h": 225,
+        "s": 0.09,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b3b4b1",
+       "share": 0.14
+      },
+      {
+       "color": "#f5f5f2",
+       "share": 0.13
+      },
+      {
+       "color": "#b5b6b3",
+       "share": 0.11
+      },
+      {
+       "color": "#171912",
+       "share": 0.11
+      },
+      {
+       "color": "#bfc0bd",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#c9ff22",
+      "hsl": {
+       "h": 75,
+       "s": 1,
+       "l": 0.57
+      },
+      "fg": "#181a12"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 20,
+     "height": 44,
+     "withShadow": 4,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Супермаркети",
+      "За відстанню ⌄",
+      "Хапнути ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 18,
+     "shadowOverlay": 2,
+     "shadowSamples": [
+      "nav.switcher → rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.467) 0px -2px 4p",
+      "button.switch-tab.active → rgba(255, 255, 255, 0.6) 0px 1px 0px 0px inset, rgba(98, 125, 25, 0.44) 0px -2px",
+      "section.map-shell → rgba(255, 255, 255, 0.07) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 10px 22p",
+      "span.offer-marker → rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(98, 125, 25, 0.5) 0px -2px "
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "nav.bottom-nav 375px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 2,
+     "boxRadius": 16,
+     "squareMedia": 6,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.22
+     },
+     {
+      "type": "img",
+      "ratio": 0.17
+     },
+     {
+      "type": "bg-image",
+      "ratio": 0.15
+     },
+     {
+      "type": "bg-image",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 39,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 375,
+     "h": 812
+    },
+    "pageH": 1067,
+    "margins": {
+     "left": 20,
+     "right": 11
+    },
+    "sections": [
+     {
+      "sel": "section.map-shell",
+      "tag": "section",
+      "top": 144,
+      "height": 220,
+      "words": 10,
+      "media": 0,
+      "middle": 53,
+      "heading": null,
+      "left": 39,
+      "right": 11,
+      "textLeft": 39,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#offers.offers",
+      "tag": "section",
+      "top": 383,
+      "height": 582,
+      "words": 45,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Знижки поруч",
+       "size": 18,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Знижки поруч",
+      "size": 18,
+      "top": 383,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 2
+     },
+     {
+      "x": 20,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 3,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 375,
+     "h": 812
+    },
+    "dark": true,
+    "ground": "#090a0b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 20,
+     "right": -162
+    },
+    "hero": {
+     "text": "Знижки поруч",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 18,
+     "vw": 4.8,
+     "font": "Inter",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 383,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 4,
+     "radii": [
+      [
+       16,
+       2
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 2,
+     "borderSamples": [
+      "#ffffff on #1d1e21 (16.67:1)",
+      "#ffffff on #1d1e21 (16.67:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 2,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 75,
+       "size": 49,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 6,
+     "tabularShare": 0,
+     "kpiMax": 11
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.85,
+     "tiny": 2,
+     "tinySamples": [
+      "Leaflet 9px",
+      "OpenStreetMap contributo 9px"
+     ],
+     "sizes": [
+      9,
+      11,
+      12,
+      14,
+      18,
+      20
+     ]
+    },
+    "title": {
+     "text": "Знижки поруч",
+     "size": 18,
+     "top": 383
+    },
+    "colourShare": 0.123
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 390,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    430,
+    375
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 390,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Lucida Console",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design.",
+   "alsoAt": [
+    430,
+    375
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "tabular",
+   "width": 390,
+   "message": "Only 0% of the figures use tabular numerals.",
+   "fix": "Set font-variant-numeric: tabular-nums on tables, KPIs and anything that updates, so digits keep their width.",
+   "alsoAt": [
+    430,
+    375
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "colour-sprawl",
+   "width": 390,
+   "message": "13% of the first screen is strongly coloured.",
+   "fix": "Keep the screen neutral and spend colour on data and status: the studied screens sit near 3%, and only tinted styles reach 10–15%, as pale tints rather than saturated fills.",
+   "alsoAt": [
+    375
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 390,
+   "message": "85% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    430,
+    375
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\projects\\magazinodegy\\skydos\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\projects\\magazinodegy\\skydos\\inspect\\mobile-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 430,
+   "fold": "C:\\projects\\magazinodegy\\skydos\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\projects\\magazinodegy\\skydos\\inspect\\mobile-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 375,
+   "fold": "C:\\projects\\magazinodegy\\skydos\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\projects\\magazinodegy\\skydos\\inspect\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

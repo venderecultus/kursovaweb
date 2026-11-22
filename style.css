@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7ed;
+  color: #3f2d36;
+  text-align: center;
+}
+header, footer { background: #ffedd5; padding: 28px 20px; }
+header { border-bottom: 1px solid #fed7aa; }
+h1 { color: #c24170; font-size: 36px; margin: 0 0 10px; }
+header p, footer { color: #80566a; }
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px 20px;
+  background: #fff;
+  border: 1px solid #fbcfe8;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px #9a53651a;
+}
+h2 { color: #c24170; margin-top: 28px; }
+main p { font-size: 17px; line-height: 1.8; }
+button {
+  background: #e11d70; color: white; border: 0; padding: 14px 30px;
+  font-size: 16px; border-radius: 8px; cursor: pointer; transition: .2s;
+}
+button:hover { background: #be185d; transform: translateY(-2px); }
+#balloon-container { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
+.balloon {
+  position: absolute; bottom: -100px; width: 64px; height: 82px;
+  border-radius: 50%; cursor: pointer; pointer-events: auto;
+  animation: fly 6s linear forwards;
+}
+.balloon::after {
+  content: ""; position: absolute; top: 82px; left: 32px;
+  width: 1px; height: 40px; background: #9ca3af;
+}
+@keyframes fly { to { transform: translateY(-120vh); } }
+.balloon.pop { animation: pop .15s ease-out forwards; }
+@keyframes pop {
+  0% { transform: scale(1); opacity: 1; }
+  70% { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.particle {
+  position: absolute; width: 8px; height: 8px; border-radius: 50%;
+  pointer-events: none; animation: explode .5s ease-out forwards;
+}
+@keyframes explode {
+  to { transform: translate(var(--x), var(--y)); opacity: 0; }
+}
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  main { margin: 24px 14px; padding: 24px 16px; }
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101113">
+  <title>Скидос — вигідне поруч</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+  <main class="app" aria-label="Головна сторінка Скидос">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Скидос — на головну"><img src="logo.png" alt="Скидос"></a>
+      <button class="icon-button location" type="button" aria-label="Знайти мене на мапі" title="Знайти мене на мапі"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.2"/></svg></button>
+      <button class="avatar" type="button" aria-label="Профіль">А</button>
+    </header>
+    <button class="city" type="button" id="cityButton" aria-label="Поточне місто: Київ">Київ <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg></button>
+
+      <nav class="switcher" aria-label="Категорії пропозицій"><button class="switch-tab active" type="button" data-category="establishments" aria-pressed="true">Заклади <span>9</span></button><button class="switch-tab" type="button" data-category="supermarkets" aria-pressed="false">Супермаркети</button></nav>
+
+    <section class="map-shell" aria-label="Мапа пропозицій поруч">
+      <div id="map" role="application" aria-label="Інтерактивна мапа OpenStreetMap, центр Києва"></div>
+      <div class="map-overlay"><span class="map-caption"><span class="live-dot"></span><span id="mapStatus" aria-live="polite">Пропозиції поруч</span><b>·</b><span id="radiusLabel">2 км</span></span><button class="map-center" id="locateButton" type="button" aria-label="Показати моє розташування" title="Показати моє розташування"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/></svg></button></div>
+    </section>
+
+    <section class="offers" id="offers">
+      <div class="section-heading"><div><h1 id="offersHeading">Заклади Києва</h1><p id="offersSubheading">Кафе, ресторани та пекарні поруч</p></div><button class="sort-button" id="sortButton" type="button" aria-label="Сортувати за відстанню" hidden>За відстанню <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 6 4.5 4 4.5-4"/></svg></button></div>
+      <div class="offer-list" hidden>
+        <article class="offer-card" data-id="silpo-tomatoes" data-distance="350" data-discount="50">
+          <div class="food photo-tomatoes" role="img" aria-label="Стиглі помідори"><span class="discount">−50%</span><img class="shop-logo" src="silpo-logo.svg" alt="Сільпо"></div>
+          <div class="offer-info"><div class="store-line"><span>Сільпо</span><span class="distance"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 8.3c0 4.3-6.5 9-6.5 9s-6.5-4.7-6.5-9a6.5 6.5 0 1 1 13 0Z"/><circle cx="10" cy="8" r="2"/></svg>350 м</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 1.5"/></svg>6 хв</span></span></div><h2>Помідори чері, 500 г</h2><div class="price-line"><span class="old-price">120 грн</span><strong>60 <small>грн</small></strong><button class="grab" type="button" data-offer="Помідори чері">Забрати <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></button></div></div>
+        </article>
+        <article class="offer-card" data-id="atb-milk" data-distance="600" data-discount="35">
+          <div class="food photo-milk" role="img" aria-label="Свіже молоко"><span class="discount">−35%</span><img class="shop-logo" src="atb-logo.svg" alt="АТБ"></div>
+          <div class="offer-info"><div class="store-line"><span>АТБ</span><span class="distance"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 8.3c0 4.3-6.5 9-6.5 9s-6.5-4.7-6.5-9a6.5 6.5 0 1 1 13 0Z"/><circle cx="10" cy="8" r="2"/></svg>600 м</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 1.5"/></svg>9 хв</span></span></div><h2>Молоко фермерське, 1 л</h2><div class="price-line"><span class="old-price">80 грн</span><strong>52 <small>грн</small></strong><button class="grab" type="button" data-offer="Молоко фермерське">Забрати <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></button></div></div>
+        </article>
+        <article class="offer-card" data-distance="800" data-discount="40"><div class="food photo-apples" role="img" aria-label="Свіжі яблука"><span class="discount">−40%</span><img class="shop-logo" src="novus-logo.svg" alt="NOVUS"></div><div class="offer-info"><div class="store-line"><span>NOVUS</span><span class="distance"><span>800 м</span><span>11 хв</span></span></div><h2>Яблука Гала, 1 кг</h2><div class="price-line"><span class="old-price">75 грн</span><strong>45 <small>грн</small></strong><button class="grab" type="button" data-offer="Яблука Гала">Забрати</button></div></div></article>
+        <article class="offer-card" data-distance="1100" data-discount="30"><div class="food photo-meat" role="img" aria-label="Свіже куряче філе"><span class="discount">−30%</span><img class="shop-logo" src="fora-logo.svg" alt="Фора"></div><div class="offer-info"><div class="store-line"><span>ФОРА</span><span class="distance"><span>1,1 км</span><span>15 хв</span></span></div><h2>Філе куряче, 600 г</h2><div class="price-line"><span class="old-price">170 грн</span><strong>119 <small>грн</small></strong><button class="grab" type="button" data-offer="Філе куряче">Забрати</button></div></div></article>
+      </div>
+      <div class="establishment-list" id="establishmentList">
+        <article class="offer-card establishment-card" data-distance="450" data-discount="35"><div class="food venue-croissants" role="img" aria-label="Свіжоспечені круасани"><span class="discount">−35%</span></div><div class="offer-info"><div class="store-line"><span>Львівські круасани</span><span class="distance"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 8.3c0 4.3-6.5 9-6.5 9s-6.5-4.7-6.5-9a6.5 6.5 0 1 1 13 0Z"/><circle cx="10" cy="8" r="2"/></svg>450 м</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 1.5"/></svg>6 хв</span></span></div><h2>Круасан із шоколадом</h2><div class="price-line"><span class="old-price">120 грн</span><strong>78 <small>грн</small></strong><button class="grab" type="button" data-offer="Круасан із шоколадом">Забрати <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></button></div></div></article>
+        <article class="offer-card establishment-card" data-distance="700" data-discount="30"><div class="food venue-bakery" role="img" aria-label="Випічка з пекарні Хлібний"><span class="discount">−30%</span></div><div class="offer-info"><div class="store-line"><span>Хлібний</span><span class="distance"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 8.3c0 4.3-6.5 9-6.5 9s-6.5-4.7-6.5-9a6.5 6.5 0 1 1 13 0Z"/><circle cx="10" cy="8" r="2"/></svg>700 м</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 1.5"/></svg>9 хв</span></span></div><h2>Круасан мигдалевий</h2><div class="price-line"><span class="old-price">110 грн</span><strong>77 <small>грн</small></strong><button class="grab" type="button" data-offer="Круасан мигдалевый">Забрати <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></button></div></div></article>
+        <article class="offer-card establishment-card" data-distance="900" data-discount="25"><div class="food venue-dessert" role="img" aria-label="Десерт із Milk Bar"><span class="discount">−25%</span></div><div class="offer-info"><div class="store-line"><span>Milk Bar</span><span class="distance"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 8.3c0 4.3-6.5 9-6.5-9a6.5 6.5 0 1 1 13 0Z"/><circle cx="10" cy="8" r="2"/></svg>900 м</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 1.5"/></svg>12 хв</span></span></div><h2>Чізкейк «Сан-Себастьян», шматок</h2><div class="price-line"><span class="old-price">200 грн</span><strong>150 <small>грн</small></strong><button class="grab" type="button" data-offer="Чізкейк Сан-Себастьян">Забрати <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></button></div></div></article>
+      </div>
+    </section>
+
+    <section class="cart-page" id="cartPage" hidden aria-labelledby="cartHeading">
+      <div class="section-heading"><div><h1 id="cartHeading">Кошик</h1><p id="cartSubtitle">Три вигідні знахідки поруч</p></div></div>
+      <div class="cart-pickup"><span class="pickup-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg></span><span><strong>Забрати сьогодні</strong><small>Київ · час отримання уточніть у закладі</small></span><span class="pickup-arrow" aria-hidden="true">›</span></div>
+      <div class="cart-list" id="cartList" aria-live="polite"></div>
+      <div class="cart-summary" id="cartSummary">
+        <div class="summary-row"><span>Товари</span><strong id="cartSubtotal">0 грн</strong></div>
+        <div class="summary-row saving-row"><span>Ваша економія</span><strong id="cartSavings">0 грн</strong></div>
+        <div class="summary-total"><span>До сплати</span><strong id="cartTotal">0 грн</strong></div>
+        <button class="checkout-button" id="checkoutButton" type="button">Перейти до отримання <span aria-hidden="true">↗</span></button>
+        <p class="checkout-note">Оплата та підтвердження — під час отримання</p>
+      </div>
+    </section>
+
+    <section class="partner-page" id="partnerPage" hidden aria-labelledby="partnerHeading" data-ui>
+      <div class="partner-topline"><button class="partner-back" id="partnerBack" type="button" aria-label="Повернутися на головну">←</button><span>Кабінет партнера</span><span class="partner-avatar" aria-hidden="true">Х</span></div>
+      <header class="partner-welcome"><h1 id="partnerHeading">Хлібний</h1><p>Ваші продажі непроданих продуктів</p></header>
+      <div class="demo-note">Демонстраційні дані для презентації</div>
+
+      <section class="partner-performance" aria-label="Результати за тиждень">
+        <div class="performance-heading"><h2>Результати за тиждень</h2><span>Останні 7 днів</span></div>
+        <div class="performance-grid"><div><strong>1 240</strong><span>переглядів</span></div><div><strong>38</strong><span>замовлень</span></div><div><strong>2 926 <small>грн</small></strong><span>виручка</span></div></div>
+        <p class="performance-caption">38 покупок замість списання продуктів</p>
+      </section>
+
+      <section class="partner-offer" aria-labelledby="partnerOfferHeading">
+        <div class="partner-section-title"><h2 id="partnerOfferHeading">Ваші пропозиції</h2><button class="partner-text-button" type="button" id="allOffersButton">Усі</button></div>
+        <article class="partner-product">
+          <div class="partner-product-photo" role="img" aria-label="Свіжа випічка з пекарні"></div>
+          <div class="partner-product-copy"><div class="partner-product-state"><span></span> Активна сьогодні</div><h3>Вечірній пакет випічки</h3><p>Залишилося 6 пакетів · до 20:00</p><div class="partner-product-price"><strong>89 грн</strong><del>180 грн</del></div></div>
+        </article>
+        <button class="promote-button" id="promoteButton" type="button"><span>Підняти в списку</span><strong>29 грн <small>/ день</small></strong></button>
+        <p class="partner-hint">Більше видимості для пропозиції поруч із покупцями</p>
+      </section>
+
+      <section class="partner-plan" aria-labelledby="planHeading">
+        <div><div class="partner-section-title"><h2 id="planHeading">Оплата за результат</h2><span class="plan-label">Без абонплати</span></div><p>Комісія лише за виконані замовлення</p></div>
+        <strong class="commission-rate">10<small>%</small></strong>
+        <div class="commission-example"><span>Приклад: замовлення на 89 грн</span><strong>Комісія Скидос — 8,90 грн</strong></div>
+      </section>
+      <p class="partner-footnote">Тариф і показники наведені для демонстрації; умови узгоджуються з партнером.</p>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Головна навігація">
+      <a class="nav-item selected" href="#home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg><span>Головна</span></a>
+      <a class="nav-item" href="#map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20Z"/><path d="M9 4v13.5M15 6.5V20"/></svg><span>Мапа</span></a>
+      <a class="nav-item" href="#cart"><span class="nav-icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18l-1.5 12h-15L3 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/><path d="M8.5 12v4M15.5 12v4"/></svg><b class="cart-count" id="cartCount" aria-label="3 товари">3</b></span><span>Кошик</span></a>
+      <a class="nav-item" href="#profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg><span>Профіль</span></a>
+    </nav>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

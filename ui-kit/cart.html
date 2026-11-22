@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кошик — YARD UI Kit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="store-page">
+  <div class="store-announcement">БЕЗКОШТОВНА ДОСТАВКА ВІД ₴ 3 000 <span>↗</span> НОВА КОЛЕКЦІЯ ВЖЕ ТУТ</div>
+  <header class="store-header">
+    <a class="wordmark" href="home.html">YARD<span>®</span></a>
+    <nav aria-label="Основна навігація"><a href="home.html#catalog">ОДЯГ</a><a href="home.html#story">НАША ІСТОРІЯ</a><a href="#footer">КОНТАКТИ</a></nav>
+    <div class="store-actions"><a href="home.html#catalog">ПОШУК</a><a href="cart.html" aria-current="page">КОШИК (2)</a></div>
+  </header>
+
+  <main class="cart-page" data-ui-assembly="cart">
+    <div class="cart-breadcrumbs"><a href="home.html">ГОЛОВНА</a><span>/</span><span>КОШИК</span></div>
+    <div class="cart-heading"><div><p class="store-eyebrow">YARD® / ТВОЄ ЗАМОВЛЕННЯ</p><h1>ТВІЙ <em>КОШИК.</em></h1></div><span>2 ПОЗИЦІЇ</span></div>
+
+    <div class="cart-layout">
+      <section class="cart-items" aria-label="Товари у кошику">
+        <article class="cart-item" data-price="3450">
+          <a class="cart-item-image" href="product.html"><img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=85" alt="Робоча куртка на вішаку Canvas work jacket"></a>
+          <div class="cart-item-info"><p class="store-eyebrow">ВЕРХНІЙ ОДЯГ</p><h2>Canvas work jacket</h2><span>Колір: Field Olive</span><span>Розмір: M</span><button class="cart-remove" type="button">ВИДАЛИТИ ×</button></div>
+          <div class="cart-item-end"><strong>₴ 3 450</strong><div class="quantity" aria-label="Кількість"><button type="button" aria-label="Зменшити кількість">−</button><output>1</output><button type="button" aria-label="Збільшити кількість">+</button></div></div>
+        </article>
+        <article class="cart-item" data-price="1150">
+          <a class="cart-item-image" href="home.html#catalog"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=85" alt="Базова бавовняна футболка Daily cotton tee"></a>
+          <div class="cart-item-info"><p class="store-eyebrow">БАЗОВИЙ ШАР</p><h2>Daily cotton tee</h2><span>Колір: Paper</span><span>Розмір: L</span><button class="cart-remove" type="button">ВИДАЛИТИ ×</button></div>
+          <div class="cart-item-end"><strong>₴ 1 150</strong><div class="quantity" aria-label="Кількість"><button type="button" aria-label="Зменшити кількість">−</button><output>1</output><button type="button" aria-label="Збільшити кількість">+</button></div></div>
+        </article>
+        <a class="cart-continue" href="home.html#catalog">← ПРОДОВЖИТИ ПОКУПКИ</a>
+      </section>
+
+      <aside class="cart-summary" aria-label="Підсумок замовлення"><p class="store-eyebrow">РАЗОМ</p><h2>ПІДСУМОК</h2><div><span>Товари</span><strong data-subtotal>₴ 4 600</strong></div><div><span>Доставка</span><span>Розраховується при оформленні</span></div><div class="cart-total"><span>До сплати</span><strong data-total>₴ 4 600</strong></div><a class="store-button" href="#checkout">ОФОРМИТИ ЗАМОВЛЕННЯ <span>↗</span></a><p>Безкоштовна доставка при замовленні від ₴ 3 000</p></aside>
+    </div>
+  </main>
+  <footer class="store-footer" id="footer"><a class="wordmark" href="home.html">YARD<span>®</span></a><span>МІСЬКИЙ РОБОЧИЙ ОДЯГ / УКРАЇНА</span><a href="mailto:hello@yard.store">HELLO@YARD.STORE ↗</a></footer>
+  <script>
+    const formatPrice = value => `₴ ${value.toLocaleString('uk-UA')}`;
+    function updateCart() {
+      const items = [...document.querySelectorAll('.cart-item')];
+      const total = items.reduce((sum, item) => sum + Number(item.dataset.price) * Number(item.querySelector('output').value || item.querySelector('output').textContent), 0);
+      document.querySelector('[data-subtotal]').textContent = formatPrice(total);
+      document.querySelector('[data-total]').textContent = formatPrice(total);
+      const count = items.reduce((sum, item) => sum + Number(item.querySelector('output').textContent), 0);
+      document.querySelector('.cart-heading>span').textContent = `${count} ПОЗИЦІЇ`;
+      document.querySelectorAll('.store-actions a')[1].textContent = `КОШИК (${count})`;
+    }
+    document.querySelectorAll('.quantity button').forEach(button => button.addEventListener('click', () => {
+      const output = button.parentElement.querySelector('output');
+      output.textContent = Math.max(1, Number(output.textContent) + (button.textContent === '+' ? 1 : -1));
+      updateCart();
+    }));
+    document.querySelectorAll('.cart-remove').forEach(button => button.addEventListener('click', () => { button.closest('.cart-item').remove(); updateCart(); }));
+    updateCart();
+  </script>
+</body>
+</html>
